@@ -1,0 +1,79 @@
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de cadastro</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Crie sua conta</legend>
+
+        <p>
+          <label for="nome">Nome:</label><br />
+          <input type="text" id="nome" name="nome" required />
+        </p>
+
+        <p>
+          <label for="email">E-mail:</label><br />
+          <input type="email" id="email" name="email" required />
+        </p>
+
+        <p>
+          <label for="senha">Senha:</label><br />
+          <input type="password" id="senha" name="senha" required />
+        </p>
+
+        <p>
+          <label>Gênero:</label><br />
+          <input
+            type="radio"
+            id="masculino"
+            name="genero"
+            value="masculino"
+            required
+          />
+          <label for="masculino">Masculino</label><br />
+          <input
+            type="radio"
+            id="feminino"
+            name="genero"
+            value="feminino"
+            required
+          />
+          <label for="feminino">Feminino</label><br />
+          <input type="radio" id="outro" name="genero" value="outro" required />
+          <label for="outro">Outro</label>
+        </p>
+
+        <p>
+          <label for="biografia">Biografia:</label><br />
+          <textarea
+            id="biografia"
+            name="biografia"
+            rows="4"
+            cols="50"
+            placeholder="Escreva algo sobre você..."
+          ></textarea>
+        </p>
+
+        <p>
+          <input type="checkbox" id="termos" name="termos" required />
+          <label for="termos">
+            Concordo com os
+            <a
+              href="#"
+              onclick="alert('Termos de uso: Ao utilizar este serviço, você concorda em fornecer informações verdadeiras e respeitar nossa política de privacidade.')"
+              >termos de uso</a
+            >
+          </label>
+        </p>
+      </fieldset>
+
+      <p>
+        <button type="submit">Cadastrar</button>
+        <button type="reset">Limpar</button>
+      </p>
+    </form>
+  </body>
+</html>
