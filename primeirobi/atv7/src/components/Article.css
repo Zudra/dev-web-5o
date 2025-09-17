@@ -1,0 +1,65 @@
+article {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+article h2 {
+  font-size: 1.8rem;
+  color: #e74c3c;
+  margin-bottom: 10px;
+}
+
+article header time {
+  color: #666;
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
+article header .author {
+  color: #2a3d66;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+article p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #444;
+}
+
+figure {
+  margin: 20px 0;
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+figcaption {
+  margin-top: 10px;
+  color: #666;
+  font-style: italic;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+@media (max-width: 480px) {
+  article h2 {
+    font-size: 1.6rem;
+  }
+  
+  article, main, aside {
+    padding: 15px;
+  }
+}
